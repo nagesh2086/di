@@ -22,6 +22,10 @@ public class HashMapNullValRetrievalTest {
 		System.out.println(val);//null
 		map.put(null, 100);
 		System.out.println(map.get(null));
+		
+		//string intern understanding
+		String fhh = new String(Messages.getString("HashMapNullValRetrievalTest.0")); //$NON-NLS-1$
+		fhh = fhh.intern();
 	}
 
 }
